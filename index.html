@@ -12,6 +12,16 @@
     <body>
 
         <button id="removeButton" onclick="removeButton()">Remove </button>
+
+        <style>
+            input {
+                margin-right: 50px;
+            }
+        </style>
+    
+    <input type="text" id="inputField" placeholder="username">
+    <button onclick="displayInputValue()">SHOW</button>
+    <p id="output"></p>
         
         <script>
             function removeButton() {
@@ -24,6 +34,11 @@
     imgElement.src = "https://www.simplilearn.com/ice9/free_resources_article_thumb/Become_a_Front_End_Developer.jpg";
 
     document.body.appendChild(imgElement);
+
+    function displayInputValue() {
+        var inputValue = document.getElementById("inputField").value;
+        document.getElementById("output").innerText = "username" + inputValue;
+    }
 
         </script>
     
