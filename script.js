@@ -21,8 +21,20 @@ function displayInputValue() {
 // 4.დავწეროთ ფუნქცია, რომელიც დაგვიბრუნებს არგუმენტად მიღებული ხარჯების ჯამს. ფუნქციას არგუმენტად გადაეცით  მასივი - productData და დათვალეთ გადაცემული მასივში amount ის ჯამი const productData = [{product_id: 1, amount: 200}, { product_id: 2, amount: 300 }, { product_id:3, amount: 500 }] დაბრუნებული ჯამის მნიშნელობა გამოიტანეთ p ტეგის მნიშნელობაში
 
 
+function showTotalAmount(product_id, amount) {
+    return amount * product_id;
+}
 
 
+  const productData = [
+   {product_id: 1, amount: 200}, 
+   { product_id: 2, amount: 300 }, 
+   { product_id:3, amount: 500 }
+] 
+ 
+  
+let result = showTotalAmount(product_id, amount);
+console.log(result); 
 
 // 5. რთული დამატებითი დავალება html შექმენით <div id="user-list"></div> გამოიყენეთ 4 ელემენტიანი გრიდ სისტემა.
 
