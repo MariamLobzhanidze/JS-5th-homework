@@ -4,9 +4,28 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    // 1. html ფაილში (ჯავასკრიპტით არა) შევქმნათ ღილაკი, ამ ღილაკის კლიკზე წაიშალოს თვითონ ეს ღილაკი ანუ რომ დავკლიკავ ღილაკზე გაქრეს  გამოიყენეთ ეს მეთოდი remove() 
+    // 1. html ფაილში (ჯავასკრიპტით არა) შევქმნათ ღილაკი, ამ ღილაკის კლიკზე წაიშალოს თვითონ ეს ღილაკი ანუ რომ დავკლიკავ ღილაკზე გაქრეს
+
+    <body>
+
+        <button id="removeButton" onclick="removeButton()">Remove </button>
+        
+        <script>
+            function removeButton() {
+                var button = document.getElementById("removeButton");
+                button.remove();
+            }
+
+            var imgElement = document.createElement("img");
+
+    imgElement.src = "https://www.simplilearn.com/ice9/free_resources_article_thumb/Become_a_Front_End_Developer.jpg";
+
+    document.body.appendChild(imgElement);
+
+        </script>
     
 </body>
 </html>
